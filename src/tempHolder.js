@@ -1,20 +1,19 @@
-import React, { useEffect } from 'react';
 
-const EffectDemo = {} => {
+const EffectDemo = () => {
   const [count, setCount] = useState(0)
   const [text, setText] = useState("")
 
   //example one: runs once
   useEffect(() => {
     // just contains the first argument which is the callback function
-    // so this function will be called after every rednder
+    // so this function will be called after every render
     console.log("hi! this happens with every render")
   })
 
   //example 2: runs twice
   useEffect(() => {
     // contains the first argument and an empty dependancy array
-    // so this function will just on mount
+    // so this function will just run on mount
     console.log("hi! this happens on mount")
   }, [])
 

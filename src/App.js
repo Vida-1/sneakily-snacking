@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import EffectDemo from './EffectDemo';
+// import GameEffects from './GameEffects';
 import { socket } from './socket';
 
 const App = () => {
-  const [isConnect, setIsConnected] = useState(false);
+  const [isConnected, setIsConnected] = useState(false);
+  const [payload, setPayload] = useState({});
+  // const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     function handleConnect() {
@@ -19,30 +21,53 @@ const App = () => {
     // theses are our listeners
     socket.on("connect", handleConnect);
     socket.on("disconnect", handleDisconnect);
-    socket.on("rsponse", (payload) => console.log(payload));
+    socket.on("questionsReady", (payload) => console.log(payload));
 
     // clean up the socket listeners
+
     return () => {
-      // turns off socket listeners
+      // turns off socket listeners 
       socket.off("connect", handleConnect);
       socket.off("disconnect", handleDisconnect);
       socket.off("response", () => console.log("response listener is off"));
     };
-  });
+    }, [payload.message]);
 
-    const handleHello = () => {
-      socket.emit("hello");
+  // Todo:  get rid of the ready button after click
+  //   const removeElement = () => {
+  //   setVisible((prev) => !prev); 
+  // }
+
+    const handleReady = () => {
+      socket.emit("childReady");
+
+      // removeElement();
     };
+  
+  // const handleInput = () => {  // radio button value didn't like function call within braces
+  //   socket.emit("Yes");
+  // }
+
+  // const handleSelection = (answer) => {
+  //   socket.emit("Yes");
+  // };
 
   return (
     <div>
       <p> Is connected? {isConnected ? "true" : "false"}</p>
-      <button onClick={handleHello}>Say hello</button>
+      <button onClick= {handleReady}>Ready</button>
+
+      <p>{payload.message}</p>
+      
+      <input type="radio" value={"Yes"} /> Yes 
+      {/* <input type="radio" value={"No"} /> No */}
+     
+   {/* <GameEffects/> */}
     </div>
   );
 }
 
-
+export default App;
 
 // import logo from './logo.svg';
 // import './App.css';

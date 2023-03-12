@@ -1,15 +1,15 @@
-// import React from 'react';
-// import ReactDOM from 'react-dom/client';
-// import './index.css';
-// import App from './App';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>
-// );
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
 // // If you want to start measuring performance in your app, pass a function
 // // to log results (for example: reportWebVitals(console.log))
@@ -18,22 +18,22 @@
 
 // copy here directly from the documentation
 
-const { Server } = require("socket.io");
+// const { Server } = require("socket.io-client");
 
-const io = new Server({
-  cors: {
-    origin: "http://localhost:3000",
-  },
-});
+// const io = new Server({
+//   cors: {
+//     origin: "http://localhost:3000",
+//   },
+// });
 
-io.listen(4000);
+// io.listen(4000);
 
-function handleHello() {
-  console.log("client says hello");
-  io.emit("response", "Hi from Server!");
-}
+// function handleHello() {
+//   console.log("client says hello");
+//   io.emit("response", "Hi from Server!");
+// }
 
-function handleConnection(socket) {
-  console.log("have new connection", socket.id);
-  io.emit()
-}
+// function handleConnection(socket) {
+//   console.log("have new connection", socket.id);
+//   io.emit()
+// }

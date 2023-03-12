@@ -1,7 +1,7 @@
 
-# LAB - Class xx
+# LAB - Class 29
 
-## Project: Project Name Here
+## Project: Component Lifecycle / useEffect() Hook
 
 ### Author: Vida P.
 
