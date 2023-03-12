@@ -1,13 +1,56 @@
+*{
+text-align: center;
+align-items: center;
+background-color: lightblue;
+color: purple
+}
+
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(20px + 2vmin);
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+header {
+  background-color: white;
+  align-content: center;
+  justify-items: center;
+}
+
+p {
+  font-size: 15pt;
+  font-style: italic
+}
+
+button {
+  font-size: 45px;
+  margin: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+#cookies {
+  width: 25%;
+  height: 50%;
+}
+
+#snackers {
+  width: 100%;
+  height: 100%;
 }

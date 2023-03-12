@@ -3,37 +3,40 @@
 
 ## Project: Component Lifecycle / useEffect() Hook
 
-### Author: Vida P.
+### Author: Andra S. & Vida P.
+### _Attribution: Special thanks to Evie P. for finding a troublesome scope issue on the initial payload/recentPayload/setRecentPayload variables!_
 
 ### Links and Resources
 
-- [ci/cd](http://xyz.com) (GitHub Actions)
-- [back-end server url](http://xyz.com) (when applicable)
-- [front-end application](http://xyz.com) (when applicable)
-- [Reading Notes ## -Topic](https://vida-1.github.io/reading-notes/read##_401.html)
-- 
+- [ci/cd](https://github.com/Vida-1/sneakily-snacking/actions/new) (GitHub Actions)
+- [back-end server url](https://github.com/Maru-007/sneaky-snacker/blob/main/src/child/index.js)
+- [front-end application](https://github.com/Vida-1/sneakily-snacking)
+- [Reading Notes 26 -Component Based UI](https://vida-1.github.io/reading-notes/read26_401.html)
+- [Reading Notes 27 -useState() Hook](https://vida-1.github.io/reading-notes/read27_401.html)
+- [Reading Notes 28 -Advanced State with Reducers](https://vida-1.github.io/reading-notes/read28_401.html)
+- [Reading Notes 29 -Component Lifecycle/useEffect Hook](https://vida-1.github.io/reading-notes/read29_401.html)
+
 ### Setup
 
 #### `.env` requirements (where applicable)
 
-i.e.
+- `PORTS` - 3000, 4000
 
-- `PORT` - Port Number
-- `DATABASE_URL` - URL to the running Postgres instance/db
-
-npm init - to create a package.json file
-npm install nodemon - lets you run your server locally (may need to be installed multiple times while working on a project)
-npm install prettierrc - a linter that only seems to exist to break stuff
-npm install jest - lets you use jest to test your code
-npm install supertest - lets you use some special part of jest to test your code (something to do with grouping things together and/or "describe" look it up!
-npm install express - lets you instantiate an express server
+* npm init - to create a package.json file
+* npm install nodemon - lets you run your server locally (may need multiple installs during development)
+* npm install prettierrc - a linter that only seems to exist to break stuff
+* npm install jest - lets you use jest to test your code
+* npm install supertest - lends access to special jest features to test your code 
+* npm install socket.io
+* npm install --save bootstrap
 
 
 #### How to initialize/run your application (where applicable)
 
-- e.g. `npm start`
+- Frontend React Client: npm start
+- Backend Socket.io Server: node index.js 
 
-#### How to use your library (where applicable)
+<!-- #### How to use your library (where applicable)
 
 #### Tests
 
