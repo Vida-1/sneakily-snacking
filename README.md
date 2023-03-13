@@ -4,7 +4,6 @@
 ## Project: Component Lifecycle / useEffect() Hook
 
 ### Author: Andra S. & Vida P.
-### _Attribution: Special thanks to Evie P. for finding a troublesome scope issue on the initial payload/recentPayload/setRecentPayload variables!_
 
 ### Links and Resources
 
@@ -46,4 +45,18 @@
 
 #### UML
 
-Link to an image of the UML for your application and response to events
+Link to an image of the UML for your application and response to events -->
+
+#### Attributions
+
+* The sneaky-snacker backend (socket.io client) is a full (JavaScript 401n22) class, collaborative project
+
+* Special thanks to Evie P. for finding a troublesome scope issue on the initial payload/recentPayload/setRecentPayload variables!
+
+* removeElement functionality: https://codingbeautydev.com/blog/react-remove-element-onclick/#:~:text=Remove%20stand%2Dalone%20element%20onclick%20in%20React&text=Attach%20an%20event%20handler%20to,the%20element%20from%20the%20DOM
+
+* image of cookie jar: pugsheen.com
+
+* image of young girl: stock.adobe.com by Tenstudio
+
+* image of dog:  istockphoto.com by ah_designs

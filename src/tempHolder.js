@@ -17,7 +17,7 @@ const EffectDemo = () => {
     console.log("hi! this happens on mount")
   }, [])
 
-  // example 3
+  // example 3: runs on mount and with every render update
   useEffect(() => {
     // contains the first argument and a dependency array with a state variable in it to watch
     // so this function will happen on mount, and every time count updates
